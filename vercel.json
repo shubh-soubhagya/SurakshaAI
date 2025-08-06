@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "api/bot.py", "use": "@vercel/python" },
+    { "src": "static/**/*", "use": "@vercel/static" },
+    { "src": "templates/**/*", "use": "@vercel/static" }
+  ],
+  "routes": [
+    { "src": "/chat", "dest": "api/bot.py" },
+    { "src": "/.*", "dest": "api/bot.py" }
+  ]
+}
