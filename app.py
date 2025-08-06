@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request, jsonify
 import os
 from groq import Groq
+import httpx
 
 # from dotenv import load_dotenv
 
@@ -10,15 +11,18 @@ from groq import Groq
 # ───────────────────────────
 
 # Unset proxy variables if they exist
-for var in ["http_proxy", "https_proxy", "HTTP_PROXY", "HTTPS_PROXY"]:
-    os.environ.pop(var, None)
+# for var in ["http_proxy", "https_proxy", "HTTP_PROXY", "HTTPS_PROXY"]:
+#     os.environ.pop(var, None)
+
+transport = httpx.HTTPTransport(proxy=None)
+http_client = httpx.Client(transport=transport)
 
 
 app = Flask(__name__)
 
 # load_dotenv()
 # Initialize Groq client
-client = Groq(api_key=os.environ.get("GROQ_API_KEY"))
+client = Groq(api_key=os.environ.get("GROQ_API_KEY"), http_client = http_client)
 
 @app.route("/")
 def home():
