@@ -8,6 +8,12 @@ from groq import Groq
 # ───────────────────────────
 # Load API Key Safely
 # ───────────────────────────
+
+# Unset proxy variables if they exist
+for var in ["http_proxy", "https_proxy", "HTTP_PROXY", "HTTPS_PROXY"]:
+    os.environ.pop(var, None)
+
+
 app = Flask(__name__)
 
 # load_dotenv()
