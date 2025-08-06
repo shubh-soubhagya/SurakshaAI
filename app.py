@@ -69,5 +69,5 @@ Be concise, empathetic, and prioritize life-saving information. If unsure about 
         print(f"Error: {e}")
         return jsonify({"response": "Sorry, I'm experiencing technical difficulties. Please try again later."}), 500
 
-# if __name__ == "__main__":
-#     app.run(debug=True)
+if __name__ == "__main__":
+    app.run(debug=True)
