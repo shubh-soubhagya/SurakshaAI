@@ -2,15 +2,15 @@ from flask import Flask, render_template, request, jsonify
 import os
 from groq import Groq
 
-from dotenv import load_dotenv
-from groq import Groq
+# from dotenv import load_dotenv
+
 
 # ───────────────────────────
 # Load API Key Safely
 # ───────────────────────────
 app = Flask(__name__)
 
-load_dotenv()
+# load_dotenv()
 # Initialize Groq client
 client = Groq(api_key=os.environ.get("GROQ_API_KEY"))
 
@@ -22,6 +22,9 @@ def home():
 def chat():
     user_message = request.json["message"]
     chat_history = request.json.get("history", [])
+
+    if not user_message:
+        return jsonify({"response": "Please enter a message."})
     
     try:
         # Prepare the conversation history for Groq
