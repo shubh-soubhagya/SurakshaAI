@@ -11,8 +11,8 @@ import httpx
 # ───────────────────────────
 
 # Unset proxy variables if they exist
-# for var in ["http_proxy", "https_proxy", "HTTP_PROXY", "HTTPS_PROXY"]:
-#     os.environ.pop(var, None)
+for var in ["http_proxy", "https_proxy", "HTTP_PROXY", "HTTPS_PROXY"]:
+    os.environ.pop(var, None)
 
 transport = httpx.HTTPTransport(proxy=None)
 http_client = httpx.Client(transport=transport)
