@@ -1,7 +1,6 @@
 # 🌐 SurakshaAI
 
-SurakshaAI is an intelligent disaster management and support chatbot designed to provide instant safety guidance, emergency tips, and disaster-related updates.  
-It helps users stay prepared, make informed decisions, and respond effectively during natural calamities or emergency situations.
+SurakshaAI is an intelligent disaster management and support chatbot designed to provide instant safety guidance, emergency tips, and disaster-related updates. It helps users stay prepared, make informed decisions, and respond effectively during natural calamities or emergency situations.
 
 ---
 
@@ -62,7 +61,7 @@ This project is licensed under the MIT License – feel free to use and modify i
 
 ## 📧 Contact
 **Author: Soubhagya Srivastava
-📩 Email: your-email@example.com
-💼 LinkedIn: Your LinkedIn Profile**
+📩 Email: soubhagyasrivastava240@gmail.com
+💼 [LinkedIn](https://www.linkedin.com/in/soubhagya-srivastava-611408267/)**
 
 
