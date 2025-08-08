@@ -5,8 +5,7 @@ It helps users stay prepared, make informed decisions, and respond effectively d
 
 ---
 
-## 🚀 Live Hosted Link  
-🔗 [Click Here to Access SurakshaAI](https://surakshaai-2g70.onrender.com/)  
+## 🚀 Live Hosted Link: [Click Here to Access SurakshaAI](https://surakshaai-2g70.onrender.com/)  
 
 ---
 
